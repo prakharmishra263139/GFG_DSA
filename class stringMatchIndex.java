@@ -4,7 +4,7 @@ class stringMatchIndex
     
     ArrayList<Integer> search(String pattern, String text)
     {
-        // your code here
+      
         
         ArrayList<Integer>list =new ArrayList<>();
         
