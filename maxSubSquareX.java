@@ -2,7 +2,7 @@ class maxSubSquareX {
      int largestSubsquare(int n, char a[][]) {
         int left[][] = new int[n][n];
         int top[][] = new int[n][n];
-        int res = 0;
+        int ans = 0;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 if(a[i][j]=='X'){
@@ -20,14 +20,14 @@ class maxSubSquareX {
                     int k = j-minX+1;
                     int l = i-minX+1;
                     if(top[i][k]>=minX && left[l][j]>=minX){
-                        res=Math.max(res,minX);
+                        ans=Math.max(ans,minX);
                         break;
                     }
                     minX--;
                 }
             }
         }
-        return res;
+        return ans;
     }
 
 };
