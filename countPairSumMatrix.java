@@ -33,7 +33,5 @@ class countPairSumMatrix {
 	        }
 	    }
 	    return count;
-    
-
     }
 }
